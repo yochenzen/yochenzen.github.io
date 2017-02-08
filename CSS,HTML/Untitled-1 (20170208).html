@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <style>
+            a:link {color:black; text-decoration:line-through;} 
+            a:visited {color:red; text-decoration:overline;} 
+            a:hover {font-size:20; color:blue; text-decoration:underline;} 
+            a:active {color:green; text-decoration:underline;}
+        </style>
+    </head>
+    
+    <body>
+        <a href="#" target="_self">測試文字</a>
+    </body>
+</html>
+
+     
+<html>
+    <head>
+        <style>
+            a:link {color:black; text-decoration:underline;} 
+            a:visited {color:red; text-decoration:overline;} 
+            a:hover {font-size:20; color:blue; text-decoration:underline;} 
+            a:active {color:green; text-decoration:underline;}
+            div p{
+                  background-color:#000033;
+                  color:darkorange; 
+                 }
+            div h1{
+                  background-color:#000033;
+                  color:mediumpurple; 
+                 }
+        </style>
+    </head>
+    
+    <body>
+        <a href="#" target="_self">hello world</a>
+        <div>
+            <h1>title</h1>
+            <p>Lorem會被選到</p>
+        </div>
+        <div>
+            <article>
+                <h1>title</h1>
+                <p>這個p的上一層是article(不會被選到)</p>
+            </article>
+        </div>
+
+    </body>
+</html>
+
+
+<body> //root樹根//
+    <div>
+        <h1>title</h1>
+        <p>Lorem會被選到</p>
+    </div>
+    <div>
+        <article>
+            <h1>title</h1>
+            <p>這個p的上一層是article,但還是在div下面, 也會被選到            </p>
+        </article>
+    </div>
+</body>

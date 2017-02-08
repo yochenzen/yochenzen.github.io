@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+            a:link {color:black; text-decoration:underline;} 
+            a:visited {color:red; text-decoration:overline;} 
+            a:hover {font-size:20; color:blue; text-decoration:underline;} 
+            a:active {color:green; text-decoration:underline;}
+            div p:nth-child(3n){
+                  background-color:#000033;
+                  color:darkorange; 
+                 }
+            div h1{
+                  background-color:#000033;
+                  color:mediumpurple; 
+                 }
+        </style>
+    </head>
+    
+    <body>
+        <a href="#" target="_self">hello world</a>
+            
+        <div>
+            <h1>title</h1>
+            <p>Lorem會被選到</p>
+        </div>
+        <div>
+            <article>
+                <h1>title</h1>
+                <p>這個p的上一層是article(不會被選到)</p>
+            </article>
+        </div>
+        <div>
+             div: nth-child(1) of body
+             <p>p: nth-child(1) of div</p>
+             <p>p: nth-child(2) of body</p>
+        </div>
+        <p>p: nth-child(2) of body</p>
+        <p>p: nth-child(3) of body</p>
+        <h1>h1: nth-child(4) of body</h1>
+        <p>p: nth-child(5) of body</p>
+        <p>p: nth-child(6) of body</p>
+
+    </body>
+</html>
